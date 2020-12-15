@@ -1,0 +1,195 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	background: #fefefe;
+
+}
+header{
+	
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+
+}
+
+header nav{
+position: absolute;
+background-color:#023859;
+z-index: 1000;
+height: 100%;
+overflow-y: scroll;
+left: -100%;
+
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: #dbe8ec;
+}
+::-webkit-scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+::-webkit-scrollbar-track{
+  background:#3c454e;
+
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: -webkit-linear-gradient(top, #5aafb0, #4ca06d);
+  -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
+                inset 1px 0 0 rgba(255,255,255,.4),
+                inset 0 1px 2px rgba(255,255,255,.3);
+ 
+  border:thin solid #232c34;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: -webkit-linear-gradient(top, #4ca06d, #5aafb0);
+}
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(77,161,112,.6);
+}
+header nav ul{
+
+	list-style: none;
+	position: relative;
+
+	margin-left: -20%;
+overflow: hidden;
+
+}
+header nav ul li {
+
+	display: block;
+	border-bottom: 1px solid rgba(255,255,255,.5)
+}
+header nav ul li:hover {
+
+	background-color:#e6344a;
+}
+header nav ul li:hover .desplegar {
+
+	display: none;
+}
+header nav ul li .desplegar{
+
+	display: none;
+	background-color:#011826;
+	position: relative; 
+	width: 150%;
+	z-index: 1000;
+
+}
+header nav ul li .desplegar li{
+
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5)
+}
+header nav ul li .desplegar li a{
+display: block;
+}
+header nav ul li a{
+
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+}
+header nav ul li a span{
+
+margin-right: 6%;
+
+}
+header nav ul li .separacion{
+position: relative;
+top: 3px;
+
+margin-left: 6%;
+margin-right: 0%;
+
+}
+
+.menu_bar .btn_menu{
+display: block;
+color: white;
+overflow: hidden;
+font-size: 25px;
+font-weight: bold;
+text-decoration: none;
+
+
+}
+.menu_bar .btn_registro{
+display: block;
+color: white;
+overflow: hidden;
+font-size: 25px;
+font-weight: bold;
+text-decoration: none;
+float: left;
+}
+
+.menu_bar{
+	padding: 2%;
+	background-color:#023859;
+}
+.separacion{
+	float: right;
+}
+.icon-menu, .icon-happy{
+cursor: pointer;
+}
+
+#content{
+cursor: pointer;
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: blue;
+/* Transition para el cambio de color */
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+         -ms-transition: 1s;
+            -o-transition: 1s; 
+}
+.header_separacion{
+
+	margin-left: 80%;
+}
+.interfaz_registro {
+	position: absolute;
+}
+.interfaz_registro img{
+z-index: 9000;
+position: relative;
+left: 73.5%;
+width: 20%;
+height: 20%;
+overflow: hidden;
+}
+.interfaz_registro a{
+
+z-index: 9000;
+position: relative;
+left: 57%;
+top: -20%;
+width: 20%;
+height: 20%;
+
+color: white;
+}
